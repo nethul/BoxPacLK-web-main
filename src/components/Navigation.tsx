@@ -70,9 +70,9 @@ const Navigation = () => {
               <button onClick={scrollToContact} className="text-gray-300 hover:text-purple-500 transition-colors duration-300 py-2 text-left">
                 Contact
               </button>
-              <button className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full hover:from-purple-700 hover:to-pink-700 transition-all duration-300 mt-2">
+              {/* <button className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full hover:from-purple-700 hover:to-pink-700 transition-all duration-300 mt-2">
                 Sign In
-              </button>
+              </button> */}
             </div>
           </div>
         )}

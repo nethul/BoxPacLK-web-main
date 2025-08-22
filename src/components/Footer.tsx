@@ -81,7 +81,7 @@ const Footer = () => {
           <p className="text-gray-400 text-sm mb-4 sm:mb-0">
             © 2025 BoxPax LK. All rights reserved.
           </p>
-          <div className="flex space-x-6 text-sm">
+          <div className="flex space-x-6 text-sm items-center">
             <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
             <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
             <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Cookie Policy</a>
