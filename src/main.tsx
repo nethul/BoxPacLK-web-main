@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import CustomizePage from './components/CustomizePage.tsx'
+import AboutPage from './components/AboutPage.tsx'
 
 // Simple routing based on URL path
 const renderApp = () => {
@@ -10,6 +11,10 @@ const renderApp = () => {
   
   if (path === '/customize') {
     return <CustomizePage />;
+  }
+  
+  if (path === '/about') {
+    return <AboutPage />;
   }
   
   return <App />;

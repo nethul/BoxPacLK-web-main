@@ -26,7 +26,7 @@ const Navigation = () => {
             <a href="#gifts" className="text-gray-300 hover:text-cyan-400 transition-colors duration-300">
               Gifts
             </a>
-            <a href="#about" className="text-gray-300 hover:text-pink-500 transition-colors duration-300">
+            <a href="/about" className="text-gray-300 hover:text-pink-500 transition-colors duration-300">
               About
             </a>
             <a href="#contact" className="text-gray-300 hover:text-purple-500 transition-colors duration-300">
@@ -58,7 +58,7 @@ const Navigation = () => {
               <a href="#gifts" className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 py-2">
                 Gifts
               </a>
-              <a href="#about" className="text-gray-300 hover:text-pink-500 transition-colors duration-300 py-2">
+              <a href="/about" className="text-gray-300 hover:text-pink-500 transition-colors duration-300 py-2">
                 About
               </a>
               <a href="#contact" className="text-gray-300 hover:text-purple-500 transition-colors duration-300 py-2">
