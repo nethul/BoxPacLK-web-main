@@ -25,9 +25,9 @@ const HeroSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left side - Text content */}
-          <div className="text-left">
+          <div className="text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6">
               Gift your{' '}
               <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400 bg-clip-text text-transparent">
@@ -36,7 +36,7 @@ const HeroSection = () => {
               in Sri Lanka
             </h1>
             
-            <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-lg">
+            <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-lg mx-auto lg:mx-0">
               Send heartfelt surprises and create magical moments for your family and friends across Sri Lanka with our curated gift boxes.
             </p>
             
@@ -50,10 +50,10 @@ const HeroSection = () => {
           </div>
 
           {/* Right side - Animated gift box */}
-          <div className="relative flex justify-center lg:justify-end">
+          <div className="relative flex justify-center lg:justify-end order-first lg:order-last">
             <div className="relative">
               {/* Main gift box */}
-              <div className="w-64 h-64 sm:w-80 sm:h-80 relative">
+              <div className="w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 relative">
                 {/* Gift box base */}
                 <div className="w-full h-full bg-gradient-to-br from-pink-600 to-purple-700 rounded-2xl shadow-2xl transform rotate-3 hover:rotate-6 transition-transform duration-500">
                   {/* Gift box lid */}
@@ -74,9 +74,9 @@ const HeroSection = () => {
               </div>
 
               {/* Sparkle effects */}
-              <div className="absolute -top-8 -right-8 w-4 h-4 bg-yellow-400 rounded-full opacity-80 animate-ping"></div>
-              <div className="absolute top-1/4 -left-6 w-3 h-3 bg-purple-400 rounded-full opacity-60 animate-pulse"></div>
-              <div className="absolute bottom-1/4 -right-4 w-2 h-2 bg-cyan-400 rounded-full opacity-70 animate-bounce"></div>
+              <div className="absolute -top-6 -right-6 lg:-top-8 lg:-right-8 w-3 h-3 lg:w-4 lg:h-4 bg-yellow-400 rounded-full opacity-80 animate-ping"></div>
+              <div className="absolute top-1/4 -left-4 lg:-left-6 w-2 h-2 lg:w-3 lg:h-3 bg-purple-400 rounded-full opacity-60 animate-pulse"></div>
+              <div className="absolute bottom-1/4 -right-3 lg:-right-4 w-2 h-2 bg-cyan-400 rounded-full opacity-70 animate-bounce"></div>
             </div>
           </div>
         </div>
