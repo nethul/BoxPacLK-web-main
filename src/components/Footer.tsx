@@ -2,6 +2,13 @@
 import { Gift, Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
+  const scrollToCustomize = () => {
+    const customizeSection = document.getElementById('customize');
+    if (customizeSection) {
+      customizeSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-gray-900 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -36,7 +43,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li><a href="#home" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">Home</a></li>
               <li><a href="#gifts" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">Gift Boxes</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">Custom Gifts</a></li>
+              <li><button onClick={scrollToCustomize} className="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-left">Custom Gifts</button></li>
               <li><a href="/about" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">About Us</a></li>
               <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">FAQ</a></li>
             </ul>

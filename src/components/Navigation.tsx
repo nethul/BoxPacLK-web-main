@@ -6,6 +6,12 @@ const Navigation = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const scrollToContact = () => {
+    const footer = document.querySelector('footer');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-purple-500/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,9 +35,9 @@ const Navigation = () => {
             <a href="/about" className="text-gray-300 hover:text-pink-500 transition-colors duration-300">
               About
             </a>
-            <a href="#contact" className="text-gray-300 hover:text-purple-500 transition-colors duration-300">
+            <button onClick={scrollToContact} className="text-gray-300 hover:text-purple-500 transition-colors duration-300">
               Contact
-            </a>
+            </button>
             {/* <button className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105">
               Sign In
             </button> */}
@@ -61,9 +67,9 @@ const Navigation = () => {
               <a href="/about" className="text-gray-300 hover:text-pink-500 transition-colors duration-300 py-2">
                 About
               </a>
-              <a href="#contact" className="text-gray-300 hover:text-purple-500 transition-colors duration-300 py-2">
+              <button onClick={scrollToContact} className="text-gray-300 hover:text-purple-500 transition-colors duration-300 py-2 text-left">
                 Contact
-              </a>
+              </button>
               <button className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full hover:from-purple-700 hover:to-pink-700 transition-all duration-300 mt-2">
                 Sign In
               </button>

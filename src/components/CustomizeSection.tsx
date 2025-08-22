@@ -3,7 +3,7 @@ import { Sparkles, ArrowRight, User, Truck, Heart } from 'lucide-react';
 
 const CustomizeSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-800 to-gray-900 relative overflow-hidden">
+    <section id="customize" className="py-20 bg-gradient-to-b from-gray-800 to-gray-900 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 bg-purple-500 rounded-full blur-3xl"></div>
