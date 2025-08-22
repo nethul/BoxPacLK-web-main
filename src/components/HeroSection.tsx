@@ -39,14 +39,16 @@ const HeroSection = () => {
             <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-lg mx-auto lg:mx-0">
               Send heartfelt surprises and create magical moments for your family and friends across Sri Lanka with our curated gift boxes.
             </p>
-            
-            <button 
+            <div className='flex justify-center lg:justify-start'>
+              <button 
               onClick={scrollToGifts}
-              className="group bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 flex items-center space-x-3"
+              className="group bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-center font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 flex items-center space-x-3"
             >
               <span>Let's gift</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </button>
+            </div>
+            
           </div>
 
           {/* Right side - Animated gift box */}
