@@ -50,7 +50,7 @@ const AboutPage = () => {
               <p className="text-lg sm:text-xl text-gray-200 leading-relaxed">
                 Your <span className="text-purple-400 font-semibold">GIFT</span> is as unique as you, so we work with clients to create individual 
                 packages that best fits them. These core options will give you a starting 
-                point based on what our most common packages look like. We at <span className="text-purple-400 font-semibold">BOXPAC</span> 
+                point based on what our most common packages look like. We at <span className="text-purple-400 font-semibold"> BOXPAC </span> 
                 create the perfect personal, client or corporate gift for you for every 
                 occasion.
               </p>
